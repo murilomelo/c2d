@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Exemplo Javascript</title>
+<script language="javascript">
+function calcular()
+{
+var nota1, nota2, nota3, nota4, media;
+a1 = frmOrc.txta1.value * 50;
+a2 = frmOrc.txta2.value * 297;
+a3 = frmOrc.txta3.value * 250;
+a4 = frmOrc.txta4.value * 297;
+a5 = frmOrc.txta5.value * 250;
+a6 = frmOrc.txta6.value * 197;
+a7 = frmOrc.txta7.value * 150;
+a8 = frmOrc.txta8.value * 197;
+a9 = frmOrc.txta9.value * 150;
+a10 = frmOrc.txta10.value * 47;
+a11 = frmOrc.txta11.value * 40;
+a12 = frmOrc.txta12.value * 47;
+a13 = frmOrc.txta13.value * 100;
+
+a1 = parseFloat(a1) ;
+a2 = parseFloat(a2);
+a3 = parseFloat(a3) ;
+a4 = parseFloat(a4);
+a5 = parseFloat(a5);
+a6 = parseFloat(a6);
+a7 = parseFloat(a7);
+a8 = parseFloat(a8);
+a9 = parseFloat(a9);
+a10 = parseFloat(a10);
+a11 = parseFloat(a11);
+a12 = parseFloat(a12);
+a13 = parseFloat(a13);
+total = (a1+a2+a3+a4+a5+a6+a7+a8+a9+a10+a11+a12+a13);
+frmOrc.txtTotal.value = total;
+}
+</script>
+</head>
+<body>
+<p>Calculadora Orçamento c2d<p>
+
+<form name ="frmOrc">
+<table border="1" cellpadding="1" cellspacing="1" style="width: 500px">
+			<tbody>
+				<tr>
+					<td style="text-align: center;">
+						<strong>Servi&ccedil;o</strong></td>
+					<td style="text-align: center;">
+						<strong>Quantidade</strong></td>
+				</tr>
+				<tr>
+					<td>
+						&nbsp;</td>
+					<td>
+						&nbsp;</td>
+				</tr>
+				<tr>
+					<td>
+						Usu&aacute;rios Extras</td>
+					<td style="text-align: center;">
+						<input name="txta1" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Whatsapp</td>
+					<td style="text-align: center;">
+						<input name="txta2" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Whatsapp Adicional</td>
+					<td style="text-align: center;">
+						<input name="txta3" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Instagram</td>
+					<td style="text-align: center;">
+						<input name="txta4" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Instagram Adicional</td>
+					<td style="text-align: center;">
+						<input name="txta5" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Facebook</td>
+					<td style="text-align: center;">
+						<input name="txta6" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Facebook Adicional</td>
+					<td style="text-align: center;">
+						<input name="txta7" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Telegram</td>
+					<td style="text-align: center;">
+						<input name="txta8" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Telegram Adicional</td>
+					<td style="text-align: center;">
+						<input name="txta9" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Email</td>
+					<td style="text-align: center;">
+						<input name="txta10" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Email Adicional</td>
+					<td style="text-align: center;">
+						<input name="txta11" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						Live Chat</td>
+					<td style="text-align: center;">
+						<input name="txta12" type="text" /></td>
+				</tr>
+				<tr>
+					<td>
+						M&oacute;dulos Adicionais</td>
+					<td style="text-align: center;">
+						<input name="txta13" type="text" /></td>
+				</tr>
+			</tbody>
+		</table>
+<input type="button" value="Calcular" onclick="javascript:calcular();"/>
+			<input value="Limpar" type="reset" />
+<center> Total: <input type ="text" name="txtTotal"/><br></p> </center>
+</form>
+</body>
+</html>
